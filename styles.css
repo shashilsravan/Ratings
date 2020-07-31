@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@562&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+html body{
+    font-family: "Caveat";
+    background: aliceblue;
+}
+.container{
+    padding: 1.5rem 1rem;
+    background: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 5rem 0rem;
+}
+.stars-outer{
+    position: relative;
+    display: inline-block;
+}
+.stars-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+}
+
+h2{
+    font-family: "Dancing Script";
+}
+.stars-outer::before{
+    content: "\f005 \f005 \f005 \f005 \f005 ";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #ccc;
+}
+.stars-inner::before{
+    content: "\f005 \f005 \f005 \f005 \f005 ";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #f8ce0b;
+}
